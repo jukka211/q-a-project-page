@@ -1,0 +1,162 @@
+@font-face {
+    font-family:Helvetica-Medium;
+    src: url("helvetica_medium.ttf");
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;  /* Width of the scrollbar */
+}
+
+
+::-webkit-scrollbar-track {
+    background: rgb(255, 0, 136);  /* Color of the track */
+   
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgb(20, 202, 0);  /* Color of the scrollbar handle */
+   
+}
+body{
+    background-color: rgb(255, 0, 136);
+    margin: 0;
+}
+
+img {
+    height:30px;
+    transition: all 300ms ease-in-out;
+}
+img:hover {
+   height:300px;
+}
+.top, .bottom {
+    font-family:Helvetica-Medium;
+    color:rgb(20, 202, 0);
+    font-size: 40pt;
+    line-height: 40pt;
+    letter-spacing: -0.4px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.top {
+    position: fixed;
+    top:10px;
+    
+}
+.bottom {
+    position: fixed;
+    bottom:10px;
+    
+}
+a{
+ text-decoration: none;
+ text-decoration: underline;
+ text-decoration-thickness: 3px;
+ color:rgb(20, 202, 0);
+ cursor: pointer;
+ 
+}
+a:hover {
+    
+    color:rgb(255, 0, 136);
+    background-color: rgb(20, 202, 0);
+}
+
+.artist1.clicked {
+    color:rgb(255, 0, 136);
+    background-color: rgb(20, 202, 0);
+}
+.artist2.clicked {
+    color:rgb(255, 0, 136);
+    background-color: rgb(20, 202, 0);
+}
+.cv0, .cv1{
+    height: 300px;
+    overflow-y: scroll;
+    font-family:Helvetica-Medium;
+    color:rgb(255, 0, 136);
+    font-size: 28pt;
+    line-height: 31pt;
+    letter-spacing: 0.1px;
+    display: none;
+    background-color: rgb(20, 202, 0);
+  
+  
+  z-index: 999;
+  
+}
+
+@media screen and (min-width: 2801px) and (max-width: 3000px) {
+    .top, .bottom {
+        font-size: 80pt;
+        line-height: 80pt;
+        letter-spacing: -0.4px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .cv0, .cv1{
+        height: 500px;
+        overflow-y: scroll;
+        letter-spacing: 0;
+        font-size: 40pt;
+        line-height: 43pt;} 
+}
+
+@media screen and (min-width: 2239px) and (max-width: 2800px) {
+    .top, .bottom {
+        font-size: 62pt;
+        line-height: 62pt;
+        letter-spacing: -0.4px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .cv0, .cv1{
+        height: 400px;
+        overflow-y: scroll;
+        
+        font-size: 32pt;
+        line-height: 34pt;} 
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .top, .bottom {
+        font-size: 22pt;
+        line-height: 22pt;
+        letter-spacing: -0.4px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .cv0, .cv1{
+        height: 400px;
+        overflow-y: scroll;
+        
+        font-size: 15pt;
+        line-height: 16pt;}
+}
+
+@media screen and (max-width: 376px) {
+   
+    .top, .bottom {
+        font-size: 20pt;
+        line-height: 20pt;}
+    .cv0, .cv1{
+        height: 200px;
+        overflow-y: scroll;
+        
+        font-size: 14pt;
+        line-height: 15pt;}
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q_A</title>
+  <link rel="stylesheet" href="style.css">
+ 
+ 
+</head>
+
+<body>
+  
+<div class="top">q:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tag class="title">Signal vs. Noise vs. Body.</tag> How to sculpt a sound space with needle nails?</div>
+<div class="bottom">A:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="artist1">evicshen (US)</a> live set,
+  <div class="cv0">Alejandra Ghersi Rodríguez (born 14 October 1989),  known professionally as Arca <img src="image1.jpg">, is a Venezuelan musician and record producer based in Barcelona, Spain. <br>She[a] initially began <img src="image2.jpg"> releasing music under the name of Nuuro. After attending the Clive Davis Institute of Recorded Music, Ghersi first released the EP Baron Libre (2012) under the name Arca and subsequently released the EPs Stretch 1 and Stretch 2; the latter experimented with hip hop and brought her attention from prominent music publications.
+  <br>She released her first two albums, Xen and Mutant, <img src="image3.jpg"> in 2014 and 2015 respectively. Her eponymous third album, Arca (2017), became the first to prominently feature her vocals. From 2020 to 2021, Ghersi released the Kick quintet, starting with the album Kick I (2020) and ending with Kick IIIII (2021); these recordings drew from styles such as IDM, reggaeton, avant-pop, techno, and ambient. Ghersi has frequently incorporated themes related to gender identity, non-binary identification, and psychosexuality in her work, particularly after coming out in 2018.</div>
+  <a class="artist2">Lukas König (AT)</a> live set, <div class="cv1">Alejandra Ghersi Rodríguez (born 14 October 1989), known professionally as Arca, is a Venezuelan musician and record producer based in Barcelona, Spain. <br>She[a] initially began releasing music under the name of Nuuro. After attending the Clive Davis Institute of Recorded Music, Ghersi first released the EP Baron Libre (2012) under the name Arca and subsequently released the EPs Stretch 1 and Stretch 2; the latter experimented with hip hop and brought her attention from prominent music publications.
+    <br>She released her first two albums, Xen and Mutant, in 2014 and 2015 respectively. Her eponymous third album, Arca (2017), became the first to prominently feature her vocals. From 2020 to 2021, Ghersi released the Kick quintet, starting with the album Kick I (2020) and ending with Kick IIIII (2021); these recordings drew from styles such as IDM, reggaeton, avant-pop, techno, and ambient. Ghersi has frequently incorporated themes related to gender identity, non-binary identification, and psychosexuality in her work, particularly after coming out in 2018.</div>
+  <a>Andrea Corradi (IT)</a> live experiment, <a>Habibiti (AT)</a> dj set
+  <br>Thu 6 June 2024 20:30, <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x477397d108acd9a3:0xf5bf398fdc4eb20?sa=X&ved=1t:8290&ictx=111">Schießhalle, Waldeggstraße 116, Linz</a>
+  </div>
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const artist1 = document.querySelector('.artist1');
+        const artist2 = document.querySelector('.artist2');
+
+        const cv0 = document.querySelector('.cv0');
+        const cv1 = document.querySelector('.cv1');
+
+        artist1.addEventListener('click', () => toggleCVVisibility(cv0, cv1));
+        artist2.addEventListener('click', () => toggleCVVisibility(cv1, cv0));
+
+        function toggleCVVisibility(showCV, hideCV) {
+            if (hideCV.style.display === 'block') {
+                hideCV.style.display = 'none';
+            }
+            showCV.style.display = 'block';
+        }
+    });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+      const artistElement = document.querySelector('.artist1');
+      
+      artistElement.addEventListener('click', (e) => {
+          e.stopPropagation();  // Prevent the click from propagating to the document
+          artistElement.classList.add('clicked');
+      });
+
+      document.addEventListener('click', () => {
+          artistElement.classList.remove('clicked');
+      });
+  });
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+      const artistElement = document.querySelector('.artist2');
+      
+      artistElement.addEventListener('click', (e) => {
+          e.stopPropagation();  // Prevent the click from propagating to the document
+          artistElement.classList.add('clicked');
+      });
+
+      document.addEventListener('click', () => {
+          artistElement.classList.remove('clicked');
+      });
+  });
+  document.addEventListener('DOMContentLoaded', (event) => {
+      const artistElement = document.querySelector('.artist3');
+      
+      artistElement.addEventListener('click', (e) => {
+          e.stopPropagation();  // Prevent the click from propagating to the document
+          artistElement.classList.add('clicked');
+      });
+
+      document.addEventListener('click', () => {
+          artistElement.classList.remove('clicked');
+      });
+  });
+  document.addEventListener('DOMContentLoaded', (event) => {
+      const artistElement = document.querySelector('.artist4');
+      
+      artistElement.addEventListener('click', (e) => {
+          e.stopPropagation();  // Prevent the click from propagating to the document
+          artistElement.classList.add('clicked');
+      });
+
+      document.addEventListener('click', () => {
+          artistElement.classList.remove('clicked');
+      });
+  });
+</script>
+
+
+
+</body>
+</html>
