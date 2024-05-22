@@ -19,6 +19,9 @@
    
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 .Q, .A, .archive, .kontakt {
     font-family:Helvetica-Medium;
     font-size: 24px;
@@ -39,11 +42,13 @@
     position: fixed;
 }
 .Q, .A {
-    left:20px;
+    left:14px;
+    
+    
 }
 
 .archive, .kontakt {
-    right:20px;
+    right:14px;
 }
 
 .artists {
@@ -64,37 +69,40 @@
     letter-spacing: 0.5px;
     text-decoration: none;
     padding: 4px;
-    padding-top: 16px;
+    
     color:#FF007A;
     background-color: #00B701;
     text-align: left; 
     display: none;
 }
+
 p {
     margin: 0;
     padding: 0;
 }
 .description {
     font-family:Helvetica-Medium;
-    font-size: 40pt;
-    line-height: 40pt;
+    font-size: 38pt;
+    line-height: 38pt;
     letter-spacing: 0.5px;
-      
+     padding-top: 70px; 
     color:#00B701;
-    margin-top: 8%;
-    padding-bottom: 20%;
+    margin-top: 7%;
+    padding-bottom: 10%;
     
 }
 
 .main-cont {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 14px;
+    margin-left: 14px;
 }
 
 
 .small {
+    padding-top: 10px;
     font-size: 24px;
     line-height: 24px;
+    position: absolute;
    
 }
 
@@ -111,23 +119,34 @@ padding: 0;
 line-height: 0;
 
 }
+
 .a-title:hover {
     text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
 }
 .b-title:hover {
     text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
 }
 .c-title:hover {
     text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
 }
 .d-title:hover {
     text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
 }
 .q-events {
     font-size: 24px;
     line-height: 24px;
     font-family:Helvetica-Medium;
-    color:#00B701;
+    color:#ffffff;
+    
+    padding: 4px;
     
 }
 
@@ -140,6 +159,7 @@ line-height: 0;
     padding-bottom: 4%;
     padding-top: 4px;
     border-top: 1px solid #00B701;
+    
 
 }
 
@@ -184,16 +204,14 @@ body{
 
 a{
  text-decoration: none;
- text-decoration: underline;
- text-decoration-thickness: 0px;
+ 
  color:#00B701;
  cursor: pointer;
  
 }
 a:hover {
-    
-    color:rgb(255, 0, 136);
-    background-color: #00B701;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 
