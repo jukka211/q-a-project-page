@@ -4,121 +4,257 @@
   }
 
   ::-webkit-scrollbar {
-    width: 10px;  /* Width of the scrollbar */
+    width: 2px;  /* Width of the scrollbar */
 }
 
 
 ::-webkit-scrollbar-track {
-    background: rgb(255, 0, 136);  /* Color of the track */
+    background: #FF007A;  /* Color of the track */
    
 }
 
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(20, 202, 0);  /* Color of the scrollbar handle */
+    background: #00B701;  /* Color of the scrollbar handle */
    
 }
-body{
-    background-color: rgb(255, 0, 136);
-    margin: 0;
+
+.Q, .A, .archive, .kontakt {
+    font-family:Helvetica-Medium;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+   
+    color:#00B701;
 }
 
-img {
-    height:30px;
-    transition: all 300ms ease-in-out;
+.Q, .kontakt {
+    top:10px;
+    position: fixed;
 }
-img:hover {
-   height:300px;
+
+.A, .archive {
+    bottom:10px;
+    position: fixed;
 }
-.top, .bottom {
+.Q, .A {
+    left:20px;
+}
+
+.archive, .kontakt {
+    right:20px;
+}
+
+.artists {
+    cursor: pointer;
+    margin-top: 4%;
     font-family:Helvetica-Medium;
-    color:rgb(20, 202, 0);
+    font-size: 118pt;
+    line-height: 104pt;
+    letter-spacing: -0.5px;
+    color:#00B701;
+    text-align: center;
+}
+
+.a-text, .b-text, .c-text, .d-text {
+    font-family:Helvetica-Medium;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    padding: 4px;
+    padding-top: 16px;
+    color:#FF007A;
+    background-color: #00B701;
+    text-align: left; 
+    display: none;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.description {
+    font-family:Helvetica-Medium;
     font-size: 40pt;
     line-height: 40pt;
-    letter-spacing: -0.4px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.top {
-    position: fixed;
-    top:10px;
+    letter-spacing: 0.5px;
+      
+    color:#00B701;
+    margin-top: 8%;
+    padding-bottom: 20%;
     
 }
-.bottom {
-    position: fixed;
-    bottom:10px;
+
+.main-cont {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.small {
+    font-size: 24px;
+    line-height: 24px;
+   
+}
+
+.active-title {
+    cursor: pointer;
+    color:#FF007A;
+    background-color: #00B701; /* Change to your desired background color */
+}
+
+
+.a-title{
+margin:0;
+padding: 0;
+line-height: 0;
+
+}
+.a-title:hover {
+    text-decoration: underline;
+}
+.b-title:hover {
+    text-decoration: underline;
+}
+.c-title:hover {
+    text-decoration: underline;
+}
+.d-title:hover {
+    text-decoration: underline;
+}
+.q-events {
+    font-size: 24px;
+    line-height: 24px;
+    font-family:Helvetica-Medium;
+    color:#00B701;
     
 }
+
+.q-events:hover {
+    color:#FF007A;
+    background-color: #00B701;
+}
+
+.past-events{
+    padding-bottom: 4%;
+    padding-top: 4px;
+    border-top: 1px solid #00B701;
+
+}
+
+.q-events-title {
+    font-family:Helvetica-Medium;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+      
+    color:#00B701;
+}
+
+.animated-background {
+    animation: slideBackground 2s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+img {
+    height:20px;
+    transition: all 300ms ease;
+}
+img:hover {
+    height: 300px;
+}
+
+
+body{
+    height:100vh;
+    width:100%;
+    background-color: #FF007A;
+    margin: 0;
+    
+   
+}
+
 a{
  text-decoration: none;
  text-decoration: underline;
- text-decoration-thickness: 3px;
- color:rgb(20, 202, 0);
+ text-decoration-thickness: 0px;
+ color:#00B701;
  cursor: pointer;
  
 }
 a:hover {
     
     color:rgb(255, 0, 136);
-    background-color: rgb(20, 202, 0);
+    background-color: #00B701;
 }
 
-.artist1.clicked {
-    color:rgb(255, 0, 136);
-    background-color: rgb(20, 202, 0);
-}
-.artist2.clicked {
-    color:rgb(255, 0, 136);
-    background-color: rgb(20, 202, 0);
-}
-.cv0, .cv1{
-    height: 300px;
-    overflow-y: scroll;
-    font-family:Helvetica-Medium;
-    color:rgb(255, 0, 136);
-    font-size: 28pt;
-    line-height: 31pt;
-    letter-spacing: 0.1px;
-    display: none;
-    background-color: rgb(20, 202, 0);
-  
-  
-  z-index: 999;
-  
-}
+
+
 
 @media screen and (min-width: 2801px) and (max-width: 3000px) {
-    .top, .bottom {
-        font-size: 80pt;
-        line-height: 80pt;
-        letter-spacing: -0.4px;
-        margin-left: 10px;
-        margin-right: 10px;
+    .Q, .A, .archive, .kontakt, .small {
+        font-size: 42.6px;
+        line-height: 42.6px;   
     }
 
-    .cv0, .cv1{
-        height: 500px;
-        overflow-y: scroll;
-        letter-spacing: 0;
-        font-size: 40pt;
-        line-height: 43pt;} 
+    .a-text, .b-text, .c-text, .d-text {
+        font-size: 42.6px;
+        line-height: 44px; 
+    }    
+    .past-events, .q-events, .q-events-title{
+        font-size: 42.6px;
+        line-height: 42.6px; 
+    }
+    .description {
+        margin-top: 10%;
+        font-size: 92px;
+        line-height: 94px; 
+    }
+
+    .artists {
+        margin-top: 10%;
+        font-size: 350px;
+        line-height: 320px; 
+    }
 }
 
+
+
+
+
 @media screen and (min-width: 2239px) and (max-width: 2800px) {
-    .top, .bottom {
-        font-size: 62pt;
-        line-height: 62pt;
-        letter-spacing: -0.4px;
-        margin-left: 10px;
-        margin-right: 10px;
+    .Q, .A, .archive, .kontakt, .small {
+        font-size: 32px;
+        line-height: 32px;   
     }
 
-    .cv0, .cv1{
-        height: 400px;
-        overflow-y: scroll;
-        
-        font-size: 32pt;
-        line-height: 34pt;} 
+    .a-text, .b-text, .c-text, .d-text {
+        font-size: 32px;
+        line-height: 34px; 
+    }   
+    .past-events, .q-events, .q-events-title{
+        font-size: 32px;
+        line-height: 32px; 
+    } 
+    .description {
+        margin-top: 8%;
+        font-size: 70px;
+        line-height: 72px; 
+    }
+
+    .artists {
+        margin-top: 7%;
+        font-size: 260px;
+        line-height: 240px; 
+    }
 }
 
 
@@ -132,31 +268,45 @@ a:hover {
 
 
 @media screen and (max-width: 767px) {
-    .top, .bottom {
-        font-size: 22pt;
-        line-height: 22pt;
-        letter-spacing: -0.4px;
-        margin-left: 10px;
+
+    .main-cont {
         margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .Q, .A, .archive, .kontakt, .small, .past-events, .q-events, .q-events-title {
+        font-size: 16px;
+        line-height: 16px;   
     }
 
-    .cv0, .cv1{
-        height: 400px;
-        overflow-y: scroll;
-        
-        font-size: 15pt;
-        line-height: 16pt;}
+    .a-text, .b-text, .c-text, .d-text {
+        font-size: 16px;
+        line-height: 18px; 
+    }   
+   
+    .description {
+        margin-top: 8%;
+        font-size: 16px;
+        line-height: 18px; 
+    }
+
+    .artists {
+        margin-top: 28%;
+        font-size: 37px;
+        line-height: 37px; 
+        letter-spacing: -1px;
+    }
+    .past-events{
+        padding-bottom: 20%;
+    }
+
+    .archive {
+        top:10px;
+        left:20px;
+    }
+
+    .Q {
+        top:36px;
+    }
 }
 
-@media screen and (max-width: 376px) {
-   
-    .top, .bottom {
-        font-size: 20pt;
-        line-height: 20pt;}
-    .cv0, .cv1{
-        height: 200px;
-        overflow-y: scroll;
-        
-        font-size: 14pt;
-        line-height: 15pt;}
-}
