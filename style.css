@@ -102,6 +102,7 @@ p {
     margin-right: 14px;
     margin-left: 14px;
     padding-bottom: 2%;
+    padding-top: 10%;
 }
 
 
@@ -261,7 +262,7 @@ display: none;
 
 @media screen and (min-width: 3700px) {
     .artists {
-        transform: translateY(10%);
+        
         margin-top: 0;
         font-size: 470px;
         line-height: 420px; 
@@ -307,7 +308,7 @@ display: none;
     }
 
     .artists {
-        transform: translateY(10%);
+        
         margin-top: 0;
         font-size: 350px;
         line-height: 320px; 
@@ -333,16 +334,19 @@ display: none;
         line-height: 32px; 
     } 
     .description {
-        margin-top: 8%;
+        margin-top: 10%;
         font-size: 70px;
         line-height: 72px; 
     }
 
     .artists {
-        transform: translateY(10%);
+        
         margin-top: 0;
         font-size: 260px;
         line-height: 240px; 
+    }
+    .main-cont {
+        padding-top: 7%;
     }
 }
 
