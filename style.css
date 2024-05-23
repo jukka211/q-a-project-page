@@ -60,8 +60,8 @@ html {
     margin-top: 0;
     font-family:Helvetica-Medium;
     font-size: 118pt;
-    line-height: 104pt;
-    letter-spacing: -0.5px;
+    line-height: 102pt;
+    letter-spacing: -1px;
     color:#00B701;
     text-align: center;
     
@@ -275,7 +275,7 @@ display: none;
         
         margin-top: 0;
         font-size: 480px;
-        line-height: 430px; 
+        line-height: 410px; 
     }  
     .Q, .A, .archive, .kontakt, .small {
         font-size: 42.6px;
@@ -297,14 +297,56 @@ display: none;
     }
     .main-cont {
         padding-top: 9%;
+        padding-bottom: 4%;
+        }
+        .a-title:hover {
+            text-decoration: underline;
+            text-underline-offset: 27px;
+            text-decoration-thickness: 1.6px;
+        }
+        .b-title:hover {
+            text-decoration: underline;
+            text-underline-offset: 27px;
+            text-decoration-thickness: 1.6px;
+        }
+        .c-title:hover {
+            text-decoration: underline;
+            text-underline-offset: 27px;
+            text-decoration-thickness: 1.6px;
+        }
+        .d-title:hover {
+            text-decoration: underline;
+            text-underline-offset: 27px;
+            text-decoration-thickness: 1.6px;
         }
 }
 
 @media screen and (min-width: 2801px) and (max-width: 3699px) {
+    .a-title:hover {
+        text-decoration: underline;
+        text-underline-offset: 24px;
+        text-decoration-thickness: 1.6px;
+    }
+    .b-title:hover {
+        text-decoration: underline;
+        text-underline-offset: 24px;
+        text-decoration-thickness: 1.6px;
+    }
+    .c-title:hover {
+        text-decoration: underline;
+        text-underline-offset: 24px;
+        text-decoration-thickness: 1.6px;
+    }
+    .d-title:hover {
+        text-decoration: underline;
+        text-underline-offset: 24px;
+        text-decoration-thickness: 1.6px;
+    }
     .small {
         padding-top: 30px;}
     .main-cont {
     padding-top: 8%;
+    padding-bottom: 4%;
     }
     .Q, .A, .archive, .kontakt, .small {
         font-size: 42.6px;
@@ -329,7 +371,7 @@ display: none;
         
         margin-top: 0;
         font-size: 380px;
-        line-height: 350px; 
+        line-height: 330px; 
     }
 }
 
@@ -364,10 +406,11 @@ display: none;
         
         margin-top: 0;
         font-size: 270px;
-        line-height: 250px; 
+        line-height: 230px; 
     }
     .main-cont {
         padding-top: 6%;
+        padding-bottom: 4%;
     }
 }
 
