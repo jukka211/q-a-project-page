@@ -44,6 +44,7 @@ html {
 .Q, .A {
     left:14px;
     z-index: -1;
+
     
     
     
@@ -258,9 +259,10 @@ a:hover {
 display: none;
 }
 
-@media screen and (min-width: 3700px) and (max-width: 5120px) {
+@media screen and (min-width: 3700px) {
     .artists {
-        margin-top: 8%;
+        transform: translateY(10%);
+        margin-top: 0;
         font-size: 470px;
         line-height: 420px; 
     }  
@@ -305,7 +307,8 @@ display: none;
     }
 
     .artists {
-        margin-top: 10%;
+        transform: translateY(10%);
+        margin-top: 0;
         font-size: 350px;
         line-height: 320px; 
     }
@@ -336,7 +339,8 @@ display: none;
     }
 
     .artists {
-        margin-top: 7%;
+        transform: translateY(10%);
+        margin-top: 0;
         font-size: 260px;
         line-height: 240px; 
     }
